@@ -1,6 +1,6 @@
 # C++ Data Locality Benchmark
 
-This is a simple C++ benchmark attempt, trying to demonstrate the massive performance impact of data locality. The attempts to compare sequential vs. random memory access patterns to measure the "performance cliff" caused by **TLB (Translation Lookaside Buffer) misses** and **L3 cache misses** by outpacing the prefetcher. This is just a simple benchmark with a single run per size.
+This is a simple C++ benchmark attempt, trying to demonstrate the massive performance impact of data locality. The code attempts to compare sequential vs. random memory access patterns to measure the "performance cliff" caused by **TLB (Translation Lookaside Buffer) misses** and **L3 cache misses** by outpacing the prefetcher. This is just a simple benchmark with a single run per size.
 
 ## Benchmark Results (AMD Ryzen 9 9950X3D)
 
@@ -26,3 +26,4 @@ These results were run on an **AMD Ryzen 9 9950X3D**, which features a **128 MB 
 * [OSTEP (Chapter 19): Virtual Memory - TLBs (.pdf)](https://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf)
 * [UCR CS153 Slides: Cache Performance (.pdf)](https://www.cs.ucr.edu/~csong/cs153/19f/l/cache.pdf)
 * [Reddit: Data Locality (or how I made a benchmark 50x faster)](https://www.reddit.com/r/programming/comments/1sgry7/data_locality_or_how_i_made_a_benchmark_50x/)
+
